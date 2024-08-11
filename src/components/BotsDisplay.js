@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import BotCollection from './BotCollection';
 import YourBotArmy from './YourBotArmy';
-import BotSpecs from './BotsSpecs'
+import BotSpecs from './BotsSpecs';
+
 
 function BotsDisplay() {
 	const [botCollection, setBotCollection] = useState([]);
@@ -10,7 +11,7 @@ function BotsDisplay() {
 	const [collectionVisible, setCollectionVisible] = useState(true);
 	const [botSpecs, setBotSpecs] = useState({});
 	useEffect(() => {
-		fetch('https://bot-battlr-backend-two.vercel.app/bots')
+		fetch('http://localhost:3000/bots')
 			.then((response) => response.json())
 			.then((bots) => {
 				setBotCollection(bots);
@@ -55,7 +56,7 @@ function BotsDisplay() {
 		setBotCollection(newCollection);
 		setFilteredCollection(newFilteredCollection);
 		setBotArmy(newArmy);
-		fetch(`https://bot-battlr-backend-two.vercel.app/bots/${bot.id}`, {
+		fetch(`http://localhost:3000/bots/${bot.id}`, {
 			method: 'DELETE',
 		})
 			.then((response) => response.json())
