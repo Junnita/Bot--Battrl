@@ -11,7 +11,7 @@ function BotsDisplay() {
 	const [collectionVisible, setCollectionVisible] = useState(true);
 	const [botSpecs, setBotSpecs] = useState({});
 	useEffect(() => {
-		fetch('https://code-2-backend.vercel.app/bots')
+		fetch('https://bot-battlr-efg7.vercel.app/bots')
 			.then((response) => response.json())
 			.then((bots) => {
 				setBotCollection(bots);
@@ -56,7 +56,7 @@ function BotsDisplay() {
 		setBotCollection(newCollection);
 		setFilteredCollection(newFilteredCollection);
 		setBotArmy(newArmy);
-		fetch(`https://code-2-backend.vercel.app/bots/${bot.id}`, {
+		fetch(`https://bot-battlr-efg7.vercel.app/bots/${bot.id}`, {
 			method: 'DELETE',
 		})
 			.then((response) => response.json())
