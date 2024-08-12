@@ -33,8 +33,8 @@ The should be able to:
 
  ## Author 
 
-  If you want to view my link [here] (https://bot-battlr-76w6.vercel.app/)
-- []
-- []
-          **JUNNE WANJA**
+   If you want to view my link [here] (https://bot-battlr-76w6.vercel.app/)
+
+- 
+        **JUNNE WANJA**
  
