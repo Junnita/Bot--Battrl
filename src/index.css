@@ -22,22 +22,22 @@ body {
 }
 .image {
   height: 200px;
-  /* set a fixed height */
+ 
   overflow: hidden;
-  /* hide any overflowing content */
+ 
   display: flex;
-  /* use flexbox to center the image vertically and horizontally */
+  
   justify-content: center;
   align-items: center;
 }
 
 .image img {
   max-width: 100%;
-  /* make sure the image is not wider than its parent */
+
   max-height: 100%;
-  /* make sure the image is not taller than its parent */
+
 }
-/* App styling */
+
 body {
   background-color: #919e96;
 }
@@ -48,14 +48,14 @@ body {
   padding: 0 20px;
 }
 
-/* BotCollection styling */
+
 .bot-collection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* BotCard styling */
+
 .bot-card {
   width: 25px;
   margin: 20px;
@@ -104,7 +104,7 @@ body {
   margin-bottom: 5px;
   margin-top: 5px;
   text-align: center;
-  /* text-transform: uppercase; */
+  
   color: #000000;
 
   display: inline-block;
@@ -172,7 +172,7 @@ body {
   
 } */
 
-/* YourBotArmy styling */
+
  .your-bot-army {
   margin-top: 30px;
 }
@@ -299,9 +299,9 @@ button.ui.button.fluid:hover {
   border: dotted;
   border-width: 2px;
   padding: 1rem 1rem;
-  /* rotate:45deg; */
+
   scale:o.2;
-  /* translate: 1; */
+ 
 }
 
 .ui.card .image img {
