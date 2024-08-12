@@ -10,12 +10,14 @@ function BotsDisplay() {
 	const [botArmy, setBotArmy] = useState([]);
 	const [collectionVisible, setCollectionVisible] = useState(true);
 	const [botSpecs, setBotSpecs] = useState({});
-	useEffect(() => {
-		fetch('https://bot-battlr-backend1.vercel.app/bots')
+	
+    useEffect(() => {
+		fetch('https://bot-battlr-backend1.vercel.app/bots/')
 			.then((response) => response.json())
 			.then((bots) => {
 				setBotCollection(bots);
 				setFilteredCollection(bots);
+                
 				// setBotArmy(bots);
 				console.log(bots);
 				console.log(filteredCollection);
